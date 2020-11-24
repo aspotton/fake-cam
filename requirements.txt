@@ -1,5 +1,5 @@
-numpy
-opencv-python
-Pillow
-imutils
+numpy==1.19.4
+opencv-python==4.4.0.46
+Pillow==8.0.1
+imutils==0.5.3
 git+https://github.com/aspotton/python3-v4l2.git
