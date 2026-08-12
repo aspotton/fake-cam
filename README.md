@@ -1,3 +1,5 @@
+
+
 # fake-cam
 
 ![Supported Python Versions](https://img.shields.io/badge/python-3.3%20%7C%203.4%20%7C%203.5%20%7C%203.6%20%7C%203.7-blue.svg)
@@ -19,6 +21,11 @@ Then:
 ```
 sudo modprobe v4l2loopback exclusive_caps=1 && \
 docker run -it --rm --device /dev/video0:/dev/video0 --device /dev/video1:/dev/video1 -v $(pwd):/code webcam:latest /bin/bash -l
+```
+
+Once inside the container, run the stream manipulation script:
+```
+python3 webcam.py
 ```
 
 You should be able to select the new webcam in your web browser / chat application.
